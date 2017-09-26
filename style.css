@@ -202,7 +202,7 @@ body{
 .experience-bd .item-hd .item-more{
     float: right;
     text-align: center;
-    width: 6%;
+    width: 11%;
     display: inline-block;
     text-decoration: none;
     border: 1px solid #0cb37a;
@@ -283,7 +283,7 @@ body{
 .project-bd .item-hd .item-more{
     float: right;
     text-align: center;
-    width: 9%;
+    width: 11%;
     display: inline-block;
     text-decoration: none;
     border: 1px solid #0cb37a;
