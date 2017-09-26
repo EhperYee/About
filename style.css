@@ -1,0 +1,368 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body{
+    font-size: 14px;
+    line-height: 1.5;
+    background-color: #eee;
+    overflow: auto;
+    padding-top: 5px;
+}
+
+.content{
+    position: relative;
+    width: 1024px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow:0 0 15px #c0c0c0;
+    overflow: hidden;
+}
+
+.content-bd{
+
+    display: flex;
+    min-width: 200px;
+    flex-flow: row wrap;
+    overflow: hidden;
+}
+
+.content-left{
+    width: 100%;
+    height: inherit;
+    background-color: #eee;
+    color: #424242;
+    overflow: hidden;
+    flex:3.5;
+    padding: 20px 30px 40px;
+}
+
+.content-left .title{
+    width: 100%;
+    font-size:52px;
+    font-weight:300;
+    overflow: hidden;
+    padding-top:50px;
+    padding-bottom:40px;
+}
+
+.content-left .name{
+    text-align: center;
+    color: #0cb37a;
+}
+
+.content-left .job{
+    text-align: center;
+    color: #0cb37a;
+    font-size:30px;
+}
+
+.content-left .information{
+    color: #424242;
+    text-align: center;
+    line-height:35px;
+    padding-bottom:70px;
+}
+
+.content-left .skill{
+    padding-bottom:3px;
+    text-align: center;
+}
+
+.content-left .skill-name{
+    width: 100px;
+    font-size:16px;
+    display: inline-block;
+}
+
+.content-left .skill-bar-wrap{
+    width: 200px;
+    height: 20px;
+    background: #646464;
+    display: inline-block;
+    border-radius:20px;
+}
+
+.content-left .skill-bar{
+    height: 20px;
+    border-radius:20px 0 0 20px;
+    background: #0cb37a;;
+}
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('iconfont.ttf') format('truetype');
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.content-left .contact{
+    padding-top: 80px;
+    font-size: 18px;
+}
+
+.contact ul li{
+    list-style: none;
+    margin-left:70px;
+    line-height: 60px;
+}
+
+.contact ul li a{
+    color: #424242;
+    text-decoration: none;
+}
+
+.content-right{
+    flex:6;
+    padding: 20px 30px 40px;
+    color: #424242;
+}
+
+.content-right .experience{
+    overflow: hidden;
+    padding:10px 15px;
+}
+
+.content-right .experience .experience-hd{
+    position: relative;
+    height: 40px;
+    overflow: hidden;
+}
+
+.experience-hd .experience-title{
+    width: 26%;
+    background-color: #ccc;
+    border-radius: 10px;
+    margin:0 auto;
+    text-align: center;
+}
+
+.experience-hd .experience-title-l{
+    position: absolute;
+    left: 0;
+    top: 30%;
+    display: inline-block;
+    width: 32%;
+    border-top: 1px solid #bebebe;;
+}
+.experience-hd .experience-title-r{
+    position: absolute;
+    right: 0;
+    top: 30%;
+    display: inline-block;
+    width: 32%;
+    border-top: 1px solid #bebebe;;
+}
+
+.content-right .experience .experience-bd{
+    overflow: hidden;
+}
+
+.experience-bd .item-hd{
+    font-weight:bold;
+    padding-bottom:20px;
+    overflow: hidden;
+}
+
+.experience-bd .item-hd .item-time{
+    float: left;
+    width: 25%;
+    display: inline-block;
+}
+
+.experience-bd .item-hd .item-name{
+    width: 50%;
+    margin-left: 30px;
+    display: inline-block;
+}
+
+.experience-bd .item-hd .item-more{
+    float: right;
+    text-align: center;
+    width: 6%;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #0cb37a;
+    color:#0cb37a;
+}
+
+
+.experience-bd .item-bd{
+    overflow: hidden;
+    padding-bottom: 40px;
+}
+
+.experience-bd .item-bd .item-post{
+    font-weight: bold;
+}
+
+
+.content-right .project{
+    overflow: hidden;
+    padding:10px 15px;
+}
+
+.project .project-hd{
+    overflow: hidden;
+    height: 40px;
+    position: relative;
+    
+}
+
+.project-hd .project-title-l{
+    position: absolute;
+    left: 0;
+    top: 30%;
+    display: inline-block;
+    width: 32%;
+    border-top: 1px solid #bebebe;;
+}
+
+.project-hd .project-title-r{
+    position: absolute;
+    right: 0;
+    top: 30%;
+    display: inline-block;
+    width: 32%;
+    border-top: 1px solid #bebebe;;
+}
+.project-hd .project-title{
+    width: 26%;
+    border-radius: 20px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #ccc;
+}
+
+.project .project-bd{
+    overflow: hidden;
+}
+
+.project-bd .item-hd{
+    font-weight: bold;
+    padding-bottom: 5px;
+    overflow: hidden;
+    padding-bottom:20px;
+}
+
+.project-bd .item-hd .item-time{
+    float: left;
+    width: 25%;
+    display: inline-block;
+}
+
+.project-bd .item-hd .item-name{
+    width: 50%;
+    display: inline-block;
+    margin-left:30px;
+}
+
+.project-bd .item-hd .item-more{
+    float: right;
+    text-align: center;
+    width: 9%;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #0cb37a;
+    color:#0cb37a;
+}
+
+.project-bd .item-bd{
+    overflow: hidden;
+    padding-bottom: 40px;
+}
+
+.content-right .professionalSkills{
+    overflow: hidden;
+    padding:10px 15px;
+}
+
+.professionalSkills .professionalSkills-hd{
+    position: relative;
+    height: 40px;
+    overflow: hidden;
+}
+
+.professionalSkills-hd .professionalSkills-title-l{
+    position: absolute;
+    left: 0;
+    top: 30%;
+    display: inline-block;
+    width: 32%;
+    border-top: 1px solid #bebebe;
+}
+
+.professionalSkills-hd .professionalSkills-title-r{
+    position: absolute;
+    right: 0;
+    top: 30%;
+    display: inline-block;
+    width: 32%;
+    border-top: 1px solid #bebebe;
+}
+
+.professionalSkills-hd .professionalSkills-title{
+    width: 26%;
+    border-radius: 20px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #ccc;
+}
+
+.professionalSkills .professionalSkills-bd{
+    overflow: hidden;
+    padding-bottom: 40px;
+}
+
+.professionalSkills-bd ul li{
+    list-style: none;
+    line-height:40px;
+}
+
+/*移动端*/
+@media screen and (max-width:1000px) {
+    .content{
+        width: 100%;
+        margin: 5px;
+    }
+    .content .content-left{
+        flex: 1 100%;
+        padding: 20px 30px 40px;
+    }
+    .content-right{
+        flex:1 100%;
+        padding: 20px 30px 40px;
+    }
+
+    .contact ul li{
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .content-right .experience{
+        padding: 10px;
+    }
+}
